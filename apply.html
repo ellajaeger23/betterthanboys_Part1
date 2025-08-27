@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Job</title>
+</head>
+<body>
+    <h1>BTB Game Studio - Job Application</h1>
+    <p>Please fill in the form below to apply for a position with us.</p>
+    <form action="formtest.php" method="post">
+        <label for="jobref">Job Reference Number:</label>
+        <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" maxlength="5" required>
+        <small>(Exactly 5 alphanumeric characters)</small>
+        <br><br>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]{1,20}" maxlength="20" required>
+        <small>(Max 20 alphabetic characters)</small>
+     <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z]{1,20}" maxlength="20" required>
+        <small>(Max 20 alphabetic characters)</small>
+        <br><br>
+     <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+        <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
+        <br><br>
+    <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+    </fieldset>
+        <br>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" maxlength="40" required>
+        <br><br>
+        <label for="suburb">Suburb/Town:</label>
+        <input type="text" id="suburb" name="suburb" maxlength="40" required>
+        <br><br>
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="">--Select--</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+        </select>
+        <br><br>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" pattern="\d{8,12}" required>
+        <small>(8 to 12 digits)</small>
+        <br><br>
+    <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" id="html" name="skills[]" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills[]" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills[]" value="JavaScript">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="csharp" name="skills[]" value="C#">
+            <label for="csharp">C#</label>
+            <input type="checkbox" id="unity" name="skills[]" value="Unity">
+            <label for="unity">Unity</label>
+            <input type="checkbox" id="otherSkills" name="skills[]" value="Other">
+            <label for="otherSkills">Other skills…</label>
+        </fieldset>
+        <br>
+        <label for="others">Other Skills:</label><br>
+        <textarea id="others" name="others" rows="4" cols="40" placeholder="Describe any other skills here..."></textarea>
+        <br><br>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+    </form> 
+</body>
+</html>

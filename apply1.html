@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Allison Heath">
+    <meta name="keywords" content="apply, resume, offer, join">
+    <title>Application Data Home</title>
+
+    <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/styles/apply.css">
+</head>
+
+
+    <table>
+        <caption>Casual / Part Time Web Dev</caption>
+        <thead>
+            <th rowspan="1" scope="col">Instructions</th>
+            <th rowspan="1" scope="col">User Input</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>
+                    Job reference umber
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    <input type="text" name="firstname" id="firstname" maxlength="20" size="30" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    <input type="text" name="firstname" id="firstname" maxlength="20" size="30" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    DOB
+                </th>
+                <th>
+                    <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="30">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    <fieldset>
+                        <legend>
+                            Select
+                        </legend>
+                        <ul>
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="sex" value="male">
+                        </ul>
+                        <ul>
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="sex" value="female">
+                        </ul>
+                        <ul>
+                            <label for="non-binary">non-binary</label>
+                            <input type="radio" id="non-binary" name="sex" value="non-binary">
+                        </ul>
+                    </fieldset>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Street Address
+                </th>
+                <th>
+                    <input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="30" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Suburb/Town
+                </th>
+                <th>
+                    <input type="text" name="town" id="town" maxlength="40" size="30" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    State
+                </th>
+                <th>
+                    <label for="state"></label>
+                    <select name="state" id="state">
+                        <option value="vic">Victoria</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="qld">Queensland</option>
+                        <option value="sa">South Australia</option>
+                        <option value="wa">Western Australia</option>
+                        <option value="nt">Northern Territories</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Postcode
+                </th>
+                <th>
+                    <input type="text" name="town" id="town" maxlength="40" size="30" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <th>
+                    <input type="email" name="email" id="email" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Phone number
+                </th>
+                <th>
+                    <input type="number" name="phone" id="phone" min="8" max="12" required="required">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Skill List
+                </th>
+                <th>
+                    <legend>Skill List</legend>
+                    <label for="skills">Please Select</label>
+                    <label for="skill1">skill1</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill1">
+                    <label for="skill2">skill2</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill2">
+                    <label for="skill3">skill3</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill3">
+                    <label for="skill4">skill4</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill4">
+                    <label for="skill5">skill5</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill5">
+                    <label for="skill6">skill6</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill6">
+                    <label for="skill7">skill7</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill7">
+                    <label for="skill8">skill8</label>
+                    <input type="checkbox" id="skills" name="skills" value="skill8">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Other skills
+                </th>
+                <th>
+                    <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+                </th>
+            </tr>                                    
+        </tbody> 
+	</table>
